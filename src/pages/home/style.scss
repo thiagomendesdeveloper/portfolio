@@ -1,0 +1,136 @@
+@import '../../theme/global';
+
+.grid-duo{
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    text-align: center;
+    // grid-template-columns: 1fr 1fr;
+}
+
+.title-banner{
+    width: 100%;
+
+    hr{
+        width: 50px;
+    }
+}
+.title-banner-h1{
+    color: $primary;
+    line-height: 50px;
+}
+
+.img-banner{
+    max-width: 100%;
+}
+
+.img-banner-tag{
+    width: 100%;
+}
+
+.img-perfil{
+    width: 250px;
+    height: 250px;
+}
+
+.flex-sobre{
+    display: flex;
+    margin-top: 110px;
+    flex-direction: column;
+}
+
+.sobre{
+    border-left: 1px solid $paragraph;
+    padding: 20px;
+}
+
+.stacks{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+}
+
+.card-stack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-stack{
+    width: 60px;
+}
+
+.title-sobre{
+    font-weight: 500;
+    color: $primary;
+}
+
+.description-sobre{
+    font-weight: 300;
+    font-size: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.title-stack{
+    font-size: 20px;
+    margin-top: 2;
+    text-align: center;
+    font-weight: 400;
+}
+
+.sobre-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-icon{
+    font-size: 50px;
+    color: $icons;
+    cursor: pointer;
+
+    &:hover{
+        color: #1a2c6e;
+    }
+}
+
+.repositories-title{
+    color: $icons;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+@media screen and (min-width: 800px) {
+    .img-banner-tag{
+        width: 100%;
+    }
+    .img-banner{
+        max-width: 50%;
+    }
+    .flex-sobre{
+        flex-direction: row;
+    }
+    .stacks{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 40px;
+        margin: auto;
+    }
+    .title-banner{
+        width: 550px;
+    }
+    .title-banner-h1{
+        color:$primary;
+        line-height: 10px;
+    }
+}

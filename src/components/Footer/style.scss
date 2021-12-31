@@ -1,0 +1,44 @@
+@import '../../theme/global.scss';
+
+.contato-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-footer{
+    h3{
+        color: $primary;
+        font-weight: 500;
+        font-size: 24px;
+    }
+}
+
+.image-dev{
+    width: 100%;
+}
+
+.email{
+    color: $icons;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.section-footer{
+    background: #ecebff;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+    .flex-footer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .image-dev{
+        width: 40%;
+    }
+}

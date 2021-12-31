@@ -1,0 +1,50 @@
+.git-grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.git-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #c5c5c5;
+    box-shadow: 1px 1px 0px 0px #c5c5c5;
+    padding: 20px 20px 0px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+    &:hover{
+        box-shadow: 1px 1px 0px 2px #c5c5c5;
+    }
+}
+
+.icon-cod{
+    font-size: 35px;
+    color: #0052cc;
+}
+
+.git-card-title{
+    font-weight: 400;
+    color: #0D1321;
+}
+
+.git-card-language{
+    padding:10px;
+    background:#8AE1FC;
+    border-radius: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 425px) {
+    .git-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+
+    .git-card{
+        margin-bottom: 0px;
+    }
+}

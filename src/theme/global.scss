@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200&family=Nunito:wght@200;300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+$font-title: 'Roboto', sans-serif;
+$font-subtitle: 'Nunito', sans-serif;;
+
+$primary: #0052cc;
+$paragraph: #dbdbdb;
+$icons : #2f52cc;
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4{
+    font-family: $font-title;
+}
+
+p{
+    font-family: $font-subtitle;
+    color: #646464;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.light{
+    color:black;
+}
+
+.dark{
+    color: #fff;
+}
+
+.container{
+    max-width: 1500px;
+    padding: 0px 20px 0px 20px;
+    margin: auto;
+}
+
+.section{
+    padding-top: 20px;
+    margin-bottom: 100px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 400;
+}

@@ -1,0 +1,24 @@
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.menu-itens{
+    list-style: none;
+    display: block;
+    margin-right: 30px;
+
+    a{
+        display: inline-block;
+        margin:15px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 18px;
+        padding:5px;
+
+        &:hover{
+            background: rgba(236, 236, 9, 0.164);
+        }
+    }
+}

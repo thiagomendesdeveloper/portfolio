@@ -1,0 +1,15 @@
+.button{
+    padding:10px;
+    background:#0051cb;
+    color:#fff;
+    display: flex;
+    justify-content: space-around;
+
+    &:hover{
+        background:#023c94;
+    }
+}
+
+.icon-download{
+    margin-right: 10px;
+}
