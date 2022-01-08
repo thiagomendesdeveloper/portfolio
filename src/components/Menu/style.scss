@@ -1,6 +1,8 @@
+@import '../../theme/global.scss';
+
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding-top: 15px;
     width: 100%;
 }
@@ -19,6 +21,67 @@
 
         &:hover{
             background: rgba(236, 236, 9, 0.164);
+        }
+    }
+}
+
+.nav-bar{
+    display: none;
+}
+
+.menu-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-itens{
+        display: none;
+    }
+
+    .menu{
+        justify-content: flex-start;
+    }
+
+    .nav-bar{
+        display:block;
+        font-size: 35px;
+        margin-left: 10px;
+        color: $primary;
+        cursor: pointer;
+
+        &:hover{
+            color:$icons;
+        }
+    }
+
+    .menu-mobile{
+        background: $primary;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        z-index: 99;
+        height: 90vh;
+        width:100%;
+        transition: 300ms ease-in-out;
+
+        .menu-mobile-itens{
+            padding:10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2{
+            font-size: 30px;
+            color: #fff;
+            margin-left: 10px;
+        }
+
+        .menu-mobile-item{
+            color:#fff;
+            margin-top: 20px;
+            width: 100%;
+            font-size: 20px;
         }
     }
 }
