@@ -22,7 +22,7 @@ export default function Card(){
         <div className="git-grid">
             {dados.map( e =>{
                 return(
-                    <a key={e.id} href={e.html_url} target="_blank" className="git-card">
+                    <a key={e.id} href={e.html_url} target="_blank" className="git-card" rel="noreferrer">
                         <FaCode className="icon-cod"/>
                         <h2 className="git-card-title">{e.name}</h2>
                         <p className="git-card-desc">{e.description}</p>
